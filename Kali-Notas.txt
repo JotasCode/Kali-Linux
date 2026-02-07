@@ -1,3 +1,5 @@
+CVE (Common vulnerabilities and exposures): Pagina para investigar sobre vulnerabilidades. 
+
 sudo nmap -p- -sCV -vvv -min-rate 5000 direccion [ip-maquina-vulnerable]
 
 ifconfig
@@ -19,4 +21,5 @@ creeds_all
 lsa_dump_sam
 lsa_dump_secrets
 crackmapexec smb [ip-maquina-vulnerable] -u "" -H ""
+
 smbmap -u "" -p "" -H [ip-maquina-vulnerable]
