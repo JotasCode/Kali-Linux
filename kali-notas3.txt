@@ -3,7 +3,7 @@ Comandos para el manejo de sistema de archivos en Linux:
 1. ls: Muestra las carpetas y archivos en el directorio actual. 
 2. pwd: Muestra la ruta del directorio.
 3. mkdir: Crea un nuevo directorio.
-4. cd:  Cambia de directorio.
+4. cd: Cambia de directorio.
 5. cd ..: Sale del directorio.
 6. ls -l: Muestra las carpetas y archivos del directorio actual con todos los detalles.
 7. ls -a: Muestra los archivos ocultos si se encuentran en el directorio seleccionado.
@@ -12,3 +12,4 @@ Comandos para el manejo de sistema de archivos en Linux:
 10. mv [archivo.extension] [nueva-ruta]: Mueve un archivo.
 11. rm [archivo.extension]: Elimina un archivo o una carpeta.
 12. rm -r [ruta-carpeta]: Borra la carpeta con todo su contenido.
+
